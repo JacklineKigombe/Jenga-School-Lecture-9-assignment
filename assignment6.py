@@ -1,11 +1,12 @@
 #Calculating the sum of 1 to 1000
 
 def main():
+    n = int(input("Enter the number of the first natural numbers: "))
     fact = 0
-    for factor in range (1,1001):
-        fact = fact + factor
+    for i in range (1,n+1):
+        fact = fact + i
 
-    print(fact)
+    print("The sum of the first", n,"natural numbers is ",fact)
 
 
 main()
